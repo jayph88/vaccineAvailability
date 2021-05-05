@@ -103,4 +103,4 @@ if __name__ == "__main__":
         if pin_found:
             arg_pin = arg_pin.replace(pin_found, "")
             my_vaccine.pin_code = arg_pin
-            time.sleep(150)
+        time.sleep(150)
