@@ -31,7 +31,7 @@ class CoWin:
             logger.info("found centres on CoWin " + _response.text)
             return json.loads(_response.text)["centers"]
         except Exception as e:
-            logger.exception("exception occured while fetching data from CoWin")
+            logger.exception("exception occurred while fetching data from CoWin")
 
     def check_availability(self):
         pin_codes = self.pin_code.split(",")  # pin_code="15454,54552"
