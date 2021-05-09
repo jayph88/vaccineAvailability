@@ -24,8 +24,8 @@ class NotifyEmail:
                # f"pin: {pin}\n "
 
         logger.info("sending email")
-        logger.debug(f"subject: {subject}")
-        logger.debug(f"body: {body}")
+        logger.info(f"subject: {subject}")
+        logger.info(f"body: {body}")
         try:
             response = self.client.publish(
                 TargetArn=SNS_ARN,
